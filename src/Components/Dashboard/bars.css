@@ -1,0 +1,89 @@
+.top-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    padding: 0 20px;
+}
+#light .top-bar{
+    background-color: white;
+}
+#dark .top-bar{
+    background-color: #454545;
+}
+#light .top-bar h3{
+    color: black;
+}
+#dark .top-bar h3{
+    color: white;
+}
+#light .top-bar .icon{
+    color: black ;
+}
+#dark .top-bar .icon{
+    color: white !important;
+}
+.side-bar{
+    top:70px;
+    left: 0;
+    height: 100vh;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+#light .side-bar{
+    background-color: white;
+}
+#dark .side-bar{
+    background-color: #1E1E1E;
+}
+.side-bar-link{
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    padding: 5px 8px 10px 15px;
+    margin: 0px 8px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    font-weight: 500;
+}
+#light .side-bar-link{
+    color: #495057;
+}
+#dark .side-bar-link{
+    color: #ffffffb5;
+}
+#light .side-bar-link:hover{
+    color: black;
+}
+#light .side-bar .active{
+    color: #038edc;
+    background-color: #f2f3fe;
+}
+#dark .side-bar-link:hover{
+    color: black;
+}
+#dark .side-bar .active{
+    color: #038edc;
+    background-color: #3a3a3ba1;
+}
+.dd{
+    position: fixed;
+    bottom: 0px;
+    left: 20px;
+}
+#dark .dd{
+    color: white;
+}
+.dd p{
+    padding-left: 5px;
+}

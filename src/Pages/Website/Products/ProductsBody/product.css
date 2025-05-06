@@ -1,0 +1,72 @@
+.image-wrapper 
+{ 
+position: relative; width: 100%; height: 250px; overflow: hidden; cursor: pointer; 
+}
+.main-image, .hover-image 
+{ 
+    position: absolute;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    top: 0; 
+    left: 0; 
+    transition: opacity 0.4s ease; 
+    } /* الحالة العادية */
+    .main-image { opacity: 1; z-index: 2;
+    } 
+.hover-image 
+{ 
+    opacity: 0; z-index: 1;
+}
+  /* عند hover عالكمبيوتر */ 
+.image-wrapper:hover .main-image
+{
+    opacity: 0;
+} 
+.image-wrapper:hover .hover-image 
+{ 
+        opacity: 1;
+        transform:scale(1.03);
+    -webkit-transform:scale(1.03);
+    -moz-transform:scale(1.03);
+    -ms-transform:scale(1.03);
+    -o-transform:scale(1.03);
+    -webkit-transform:scale(1.03);
+} 
+     /* عند التتش على الموبايل */ 
+.image-wrapper.flipped .main-image 
+{ opacity: 0; }
+.image-wrapper.flipped .hover-image { opacity: 1; }
+.product-card{
+    width: 250px;
+}
+.sale{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: #47bac1;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.TopRated-card{
+    border: 2px solid #47bac1;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.top-title{
+    background-color: #47bac1;
+    color: white;
+    padding-bottom: 5px;
+    text-align: center;
+}

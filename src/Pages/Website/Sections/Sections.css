@@ -1,0 +1,78 @@
+.ad-section{
+    position: relative;
+    width: 100% !important;
+    background-image: url('../../../assist/banner-1-BeuiiqjK.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list{
+    background-color: rgba(0, 0,0,0.4);
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    max-width: 700px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin: 0 auto;
+}
+.list h1{
+    color: rgb(253 164 175);
+}
+.list .text1{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+.list .text2{
+    color: rgb(57, 61, 68);
+}
+.btn-show{
+    background-color: #fda4af !important;
+    color: white !important;
+    border: none !important;
+    padding: 10px !important;
+    font-weight: bold !important;
+}
+.s-card{
+    border: 1px solid #b5b5b5ad;
+    border-radius: 5px;
+    width: 100%;
+    min-height: 400px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.ss-card{
+    border: 1px solid #b5b5b5ad;
+    border-radius: 5px;
+    width: 100%;
+    min-height: 400px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.img-card{
+    position: relative;
+    margin-bottom: 10px;
+}
+.img-card-span{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    background-color: rgba(255, 255, 255, 0.349);
+    max-width: 400px;
+    max-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

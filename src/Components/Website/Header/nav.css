@@ -1,0 +1,11 @@
+.cat-title:hover{
+    text-decoration: 2px solid #47bac1 underline !important; 
+}
+.cat-title{
+    transition: 0.2s ;
+    -webkit-transition: 0.2s ;
+    -moz-transition: 0.2s ;
+    -ms-transition: 0.2s ;
+    -o-transition: 0.2s ;
+    font-size: 16px;
+}

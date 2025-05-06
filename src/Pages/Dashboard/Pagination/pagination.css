@@ -1,0 +1,27 @@
+.custom-pagination{
+    list-style: none;
+    background-color: #eee;
+    width: fit-content;
+    padding: 2px;
+}
+.pagination-link-anchor{
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.pagination-link-anchor:hover{
+    background-color: #eee;
+}

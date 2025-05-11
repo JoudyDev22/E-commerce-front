@@ -58,7 +58,7 @@ export default function TableShow(props){
                 item2.key==='images'?
                 ( <div className="d-flex justify-content-start align-items-center gap-2 flex-row">
                 {item[item2.key].map((img,index)=>(
-                        <img src={"https://ecommerce-back-production-140d.up.railway.app"+ img.image} alt="img" key={index} style={{width:'40px'}}></img>
+                        <img src={img.image} alt="img" key={index} style={{width:'40px'}}></img>
                     ))}</div>)
                     :item2.key==="created_at"||item2.key==='updated_at'?TransformDate(item[item2.key])
                     :item[item2.key]

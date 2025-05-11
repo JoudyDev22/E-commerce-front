@@ -15,6 +15,7 @@ export default function AddProduct(){
         description:"",
         price:"",
         discount:"",
+        stock:"",
         About:"",
     })
     //dummy form

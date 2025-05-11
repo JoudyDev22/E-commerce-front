@@ -130,7 +130,7 @@ export default function EditProduct(){
         <div className="gap-2 border w-100 p-3 mb-2 "key={index}>
             <div className="d-flex justify-content-between align-items-center">
             <div className="d-flex align-items-start  ">
-            <img src={"https://ecommerce-back-production-1231.up.railway.app"+URL.createObjectURL(img)} style={{width:"90px"}}></img>
+            <img src={URL.createObjectURL(img)} style={{width:"90px"}}></img>
             <div className="mx-2">
             <p className="mb-1 img-name ">{img.name}</p>
             <p className="mb-1 img-size">size: {(img.size/1024 <900)?((img.size/1024).toFixed(2)+"KB"):((img.size/(1024*1024)).toFixed(2)+"MB")}</p>
@@ -148,7 +148,7 @@ export default function EditProduct(){
         <div className="gap-2 border   p-3 mb-2 "key={index} style={{position:"relative",width:"200px",height:"150px",zIndex:"0"}}>
             <div className="d-flex justify-content-between align-items-start ">
             <div className="d-flex align-items-center  ">
-            <img src={img.image} className="img-style"></img>
+            <img src={"https://ecommerce-back-production-1231.up.railway.app"+img.image} className="img-style"></img>
             </div>
             <div style={{position:"absolute",top:"0",right:"0",zIndex:"1"}}>
             <Button variant="danger" className="mb-4 "style={{cursor:"pointer"}} onClick={()=>handleImageDeleteFromServer(img.id)}>X</Button>

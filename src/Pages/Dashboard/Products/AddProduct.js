@@ -24,6 +24,7 @@ export default function AddProduct(){
         description:"dummy",
         price:"33",
         discount:"33",
+        stock:0,
         About:"dummy"
     }
     const [categories,setcategories]=useState([]);
@@ -175,6 +176,10 @@ export default function AddProduct(){
             <Form.Group className="mb-3 " controlId="exampleForm.ControlTextarea4">
             <Form.Label className='fs-5 form-label'>Discount:</Form.Label>
             <Form.Control type="number" placeholder="discount.."  name="discount" value={form.discount} onChange={handleFormChange} disabled={!sent} required></Form.Control>
+            </Form.Group>
+            <Form.Group className="mb-3 " controlId="exampleForm.ControlTextarea4">
+            <Form.Label className='fs-5 form-label'>Stock:</Form.Label>
+            <Form.Control type="number" placeholder="stock.."  name="stock" value={form.stock} onChange={handleFormChange} disabled={!sent} required></Form.Control>
             </Form.Group>
             <Form.Group className="mb-3 " controlId="exampleForm.ControlTextarea5">
             <Form.Label className='fs-5 form-label'>About:</Form.Label>

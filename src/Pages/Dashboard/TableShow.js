@@ -52,7 +52,7 @@ export default function TableShow(props){
             {props.header.map((item2,index2)=>
             (
             <td key={index2}>{
-                item2.key==='image'?(<img src={item[item2.key]} alt="img" style={{width:'40px'}}></img>):
+                item2.key==='image'?(<img src={"https://ecommerce-back-production-140d.up.railway.app"+ item[item2.key]} alt="img" style={{width:'40px'}}></img>):
                 item[item2.key]==='1995'?("Admin"):
                 item[item2.key]==='2001'?("User"):
                 item2.key==='images'?

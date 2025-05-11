@@ -17,7 +17,7 @@ export default function WebsiteCat(){
     console.log(categories);
     const showcat=categories.map((cat,index)=>(
         <Link className="cat-card shadow-sm text-decoration-none" key={index}  to={`/categories/${cat.id}`}>
-            <div style={{width:"50px"}}><img src={cat.image} className="img-fluid card-img" alt="img"></img></div>
+            <div style={{width:"50px"}}><img src={"https://ecommerce-back-production-1231.up.railway.app"+cat.image} className="img-fluid card-img" alt="img"></img></div>
             <p className="fw-bold  text-dark">{SliceData(cat.title,15)}</p>
         </Link>
     ))

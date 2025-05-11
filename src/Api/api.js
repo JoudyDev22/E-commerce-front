@@ -1,4 +1,4 @@
-export const BaseUrl="https://ecommerce-back-production-edb2.up.railway.app/api";
+export const BaseUrl="https://ecommerce-back-production-140d.up.railway.app/api";
 //Auth
 export const REGISTER='register';
 export const LOGIN='login';

@@ -15,6 +15,7 @@ export default function EditProduct(){
         description:"",
         price:"",
         discount:"",
+        stock:"",
         About:"",
     })
     const [categories,setcategories]=useState([]);
@@ -183,6 +184,10 @@ export default function EditProduct(){
             <Form.Group className="mb-3 " controlId="exampleForm.ControlTextarea4">
             <Form.Label className='fs-5 form-label'>Discount:</Form.Label>
             <Form.Control type="number" placeholder="discount.."  name="discount" value={form.discount} onChange={handleFormChange} ></Form.Control>
+            </Form.Group>
+            <Form.Group className="mb-3 " controlId="exampleForm.ControlTextarea4">
+            <Form.Label className='fs-5 form-label'>Stock:</Form.Label>
+            <Form.Control type="number" placeholder="stock.."  name="stock" value={form.stock} onChange={handleFormChange} ></Form.Control>
             </Form.Group>
             <Form.Group className="mb-3 " controlId="exampleForm.ControlTextarea5">
             <Form.Label className='fs-5 form-label'>About:</Form.Label>

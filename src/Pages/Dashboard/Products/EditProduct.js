@@ -15,7 +15,7 @@ export default function EditProduct(){
         description:"",
         price:"",
         discount:"",
-        stock:"",
+        stock:"0",
         About:"",
     })
     const [categories,setcategories]=useState([]);

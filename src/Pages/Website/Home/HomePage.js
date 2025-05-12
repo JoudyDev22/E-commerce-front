@@ -11,11 +11,11 @@ export default function HomePage(){
     return(
         <>
         <LandingPage></LandingPage>
-        <SaleProducts></SaleProducts>
+        {/* <SaleProducts></SaleProducts> */}
         <AdvertisingSection></AdvertisingSection>
         <div className="d-flex flex-wrap ">
             <ShowTopRatedProducts></ShowTopRatedProducts>
-            <LatestProducts></LatestProducts>
+            {/* <LatestProducts></LatestProducts> */}
         </div>
         <Services></Services>
         <Footer></Footer>

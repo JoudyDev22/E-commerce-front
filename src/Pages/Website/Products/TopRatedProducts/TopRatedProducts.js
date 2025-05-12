@@ -15,7 +15,7 @@ export default function TopRatedProducts(props){
     return(
         <Link to={`/product/${props.id}`} className='d-flex row-gap-3 text-decoration-none'>
         <div style={{width:"200px",height:"100px",display:"flex",justifyContent:"center",alignItems:"center"}}>
-            <img src={props.img} alt="img" className='img-fluid w-50'></img>
+            <img src={"https://ecommerce-back-production-1231.up.railway.app"+props.img} alt="img" className='img-fluid w-50'></img>
         </div>
         <div>
             <h1 className='fs-3 text-black'>{props.title}</h1>

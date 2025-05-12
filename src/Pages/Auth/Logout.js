@@ -3,20 +3,25 @@ import { LOGOUT } from "../../Api/api";
 import { Axios } from "../../Api/axios";
 import register from '../../assist/login-bg.svg';
 import { Link } from "react-router-dom";
-import axios from "axios";
 import Cookie from "cookie-universal";
+import { useState } from "react";
 
 export default function Logout(){
+     //loading
+        const [loading,setloading]=useState(false);
      //cookie
         const cookie=Cookie();
          //handle logout
             async function handlelogout(e){
                 e.preventDefault();
+                setloading(true);
             try{
             await Axios.get(`${LOGOUT}`);
                 cookie.remove("e-commerce");
+                setloading(false);
                 window.location.pathname="/login";
             }catch(err){
+                setloading(false)
             console.log("none")
             }
             }

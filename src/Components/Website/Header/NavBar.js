@@ -66,7 +66,7 @@ export default function NavBar() {
                 <FontAwesomeIcon icon={faXmark} color='white'></FontAwesomeIcon>
             </div>
                 <div style={{width:"150px",height:"100px",display:"flex",justifyContent:"center",alignItems:"center"}}>
-                    <img src={require(`https://ecommerce-back-production-1231.up.railway.app${pro.images[0].image}`)} alt="img" className='img-fluid w-50'></img>
+                    <img src={`https://ecommerce-back-production-1231.up.railway.app`+pro.images[0].image} alt="img" className='img-fluid w-50'></img>
                 </div>
                 <div>
                     <h1 className='fs-4 text-black'>{pro.title}</h1>

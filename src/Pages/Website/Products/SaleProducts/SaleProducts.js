@@ -17,8 +17,8 @@ export default function SaleProducts(){
         key={index}
         id={pro.id}
         title={pro.title} 
-        img1={pro.images[0].image} 
-        img2={pro.images[1].image}
+        // img1={pro.images[0].image} 
+        // img2={pro.images[1].image}
         description={pro.description}
         price={pro.price}
         discount={pro.discount} 
@@ -26,6 +26,7 @@ export default function SaleProducts(){
         rating={pro.rating}
         ></Products>
     ))
+    
     return(
         <>
         <Container>

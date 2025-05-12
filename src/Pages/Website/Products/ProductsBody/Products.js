@@ -25,8 +25,8 @@ export default function Products(props) {
     <Card className="product-card  shadow-sm rounded " >
     {props.sale &&   <p className='sale'>SALE</p>}
     <div className={` image-wrapper ${isMobileFlipped ?'flipped':''}`}>
-        <img src={"https://ecommerce-back-production-1231.up.railway.app"+props.img1} alt="صورة 1" className="main-image img-fluid" />
-        <img src={"https://ecommerce-back-production-1231.up.railway.app"+props.img2}  alt="صورة 2" className="hover-image img-fluid" />
+        <img src={props.img1} alt="صورة 1" className="main-image img-fluid" />
+        <img src={props.img2}  alt="صورة 2" className="hover-image img-fluid" />
         </div>
         <Card.Body >
         <Card.Title style={{color:"rgb(24 123 129)"}}>{props.title}</Card.Title>

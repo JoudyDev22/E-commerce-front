@@ -39,7 +39,7 @@ function App() {
     <div className="App" id={mode}>
     <Routes>
     {/* public Routes */}
-    <Route path='/home' element={<Website></Website>}>
+    <Route  element={<Website></Website>}>
     <Route path='/' element={<HomePage></HomePage>}></Route>
     <Route path='/categories' element={<WebsiteCat></WebsiteCat>}></Route>
     <Route path='/categories/:id' element={<ProductbyCat></ProductbyCat>}></Route>

@@ -39,8 +39,8 @@ export default function SingleProduct(){
     Axios.get((`/${PRO}/${id}`))
     .then((data)=>{setproductImage(data.data[0].images.map((img)=>{
         return{
-            original:img.image,
-            thumbnail:img.image
+            original:"https://ecommerce-back-production-1231.up.railway.app"+img.image,
+            thumbnail:"https://ecommerce-back-production-1231.up.railway.app"+img.image
         }
     }));
     setProduct(data.data[0])

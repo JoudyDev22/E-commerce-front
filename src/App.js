@@ -40,7 +40,7 @@ function App() {
     <Routes>
     {/* public Routes */}
     <Route path='/' element={<Website></Website>}>
-    <Route path='/' element={<HomePage></HomePage>}></Route>
+    <Route path='/home' element={<HomePage></HomePage>}></Route>
     <Route path='/categories' element={<WebsiteCat></WebsiteCat>}></Route>
     <Route path='/categories/:id' element={<ProductbyCat></ProductbyCat>}></Route>
     <Route path='/product/:id' element={<SingleProduct></SingleProduct>}></Route>

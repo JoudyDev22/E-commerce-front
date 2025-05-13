@@ -197,7 +197,7 @@ export default function AddProduct(){
             <div className="d-flex align-items-start flex-column gap-2 " >
                 {showImages}
             </div>
-            <Button className='form-button mt-3' type='submit' style={{postion:"relative",left:"50%"}} >Add</Button>
+            <Button className='form-button mt-3 n' type='submit'  >Add</Button>
             </Form>
             </div>
             </>

@@ -139,3 +139,7 @@
     background-position: center;
 }
 
+.n{
+    position: relative;
+    left: 50%;
+}
